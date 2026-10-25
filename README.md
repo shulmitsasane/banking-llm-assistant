@@ -483,3 +483,7 @@ Instead, it returns:
 "I do not have enough information in the provided documents."
 
 This helps reduce hallucination and keeps responses grounded in the banking knowledge base.
+
+## Application Preview
+
+![Banking Support Assistant](screenshots/valid-query.png)
