@@ -1,0 +1,140 @@
+FIXED DEPOSIT OPERATIONS GUIDE
+
+1. Overview
+
+A fixed deposit is a banking product in which a customer deposits a specified amount for a predefined period.
+
+The deposit earns interest based on the agreed interest rate and tenure.
+
+2. Common Fixed Deposit Information
+
+A fixed deposit record may contain:
+
+- Customer ID
+- Deposit account number
+- Principal amount
+- Interest rate
+- Start date
+- Maturity date
+- Tenure
+- Nominee information
+- Maturity instructions
+- Current deposit status
+
+3. Fixed Deposit Creation
+
+A typical process may include:
+
+1. Customer selects deposit amount.
+2. Customer chooses tenure.
+3. System displays applicable interest rate.
+4. Customer confirms maturity instructions.
+5. Source account is debited.
+6. Fixed deposit account is created.
+7. Maturity date is generated.
+
+4. Deposit Statuses
+
+Common statuses may include:
+
+- Active
+- Matured
+- Closed
+- Prematurely Closed
+- Renewal Pending
+- Renewed
+
+5. Maturity
+
+The maturity date is the date on which the agreed fixed deposit tenure ends.
+
+At maturity, the bank may:
+
+- Credit principal and interest to the customer's account
+- Renew the fixed deposit
+- Follow another maturity instruction configured by the customer
+
+6. Premature Closure
+
+Premature closure means closing the fixed deposit before the maturity date.
+
+The customer may receive:
+
+- Principal amount
+- Interest calculated according to premature closure rules
+- Amount after any applicable penalty
+
+7. Premature Closure Checks
+
+Before premature closure, the system should verify:
+
+- Deposit is active
+- Customer is authorized
+- Deposit is eligible for premature closure
+- Applicable penalty or reduced interest rate
+- Final payable amount
+
+8. Sample Error Codes
+
+FD101 - Fixed deposit account not found.
+
+FD102 - Deposit is already closed.
+
+FD103 - Premature closure is not allowed for this deposit product.
+
+FD104 - Deposit has already matured.
+
+FD105 - Customer authorization failed.
+
+FD106 - Unable to calculate final settlement amount.
+
+9. Error Resolution
+
+For FD101:
+Verify the fixed deposit account number.
+
+For FD102:
+Check the closure history before processing another request.
+
+For FD103:
+Review the deposit product rules.
+
+For FD104:
+Follow the maturity process instead of premature closure.
+
+For FD105:
+Verify customer ownership and authorization.
+
+For FD106:
+Escalate if the system cannot determine the final payable amount.
+
+10. Renewal
+
+A fixed deposit may be renewed automatically or manually.
+
+Renewal may apply to:
+
+- Principal only
+- Principal plus interest
+
+The new deposit may use the interest rate applicable on the renewal date.
+
+11. Customer Support Questions
+
+Common questions include:
+
+- What is my maturity date?
+- What happens if I close the deposit early?
+- Why is the final amount lower than expected?
+- Can I renew my deposit?
+- What happens at maturity?
+
+12. Escalation
+
+Escalation may be required when:
+
+- Deposit amount is incorrect
+- Interest calculation appears incorrect
+- Deposit status does not update
+- Maturity payment is not credited
+- Premature closure fails repeatedly

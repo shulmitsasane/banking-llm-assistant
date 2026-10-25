@@ -1,0 +1,146 @@
+KYC AND CUSTOMER VERIFICATION GUIDE
+
+1. Overview
+
+KYC stands for Know Your Customer. KYC is the process used by banks and financial institutions to verify the identity of a customer before providing certain banking services.
+
+The purpose of KYC is to confirm that the customer is genuine, ensure that customer records are accurate, and reduce the risk of fraud, identity misuse, and other financial crimes.
+
+2. Basic Customer Information
+
+The bank may collect information such as:
+
+- Full name
+- Date of birth
+- Residential address
+- Mobile number
+- Email address
+- PAN number
+- Aadhaar number or another identity reference
+- Occupation
+- Employment details
+- Source of income
+
+3. Common Identity Documents
+
+Common documents used for identity verification may include:
+
+- PAN card
+- Aadhaar card
+- Passport
+- Driving licence
+- Voter ID
+
+The exact set of accepted documents may depend on the bank's internal policy and the type of account being opened.
+
+4. Address Verification
+
+The customer may also be required to provide address proof.
+
+Examples may include:
+
+- Aadhaar card
+- Passport
+- Utility bill
+- Bank statement
+- Registered rent agreement
+- Driving licence
+
+The address entered in the banking system should match the document submitted by the customer.
+
+5. KYC Validation Process
+
+A typical KYC process may include the following steps:
+
+1. Customer submits personal details.
+2. Identity and address documents are uploaded or provided.
+3. The system checks whether mandatory fields are complete.
+4. The documents are reviewed for validity.
+5. Customer information is matched with the submitted documents.
+6. Any mismatch is flagged for review.
+7. Once verification is completed, the KYC status is updated.
+
+6. KYC Statuses
+
+The system may maintain statuses such as:
+
+- Pending
+- Under Review
+- Verified
+- Rejected
+- Expired
+- Update Required
+
+7. Common KYC Issues
+
+Common issues may include:
+
+- Missing PAN number
+- Invalid document format
+- Expired passport or licence
+- Name mismatch
+- Address mismatch
+- Incomplete date of birth
+- Blurred or unreadable document
+- Duplicate customer record
+
+8. Sample Error Codes
+
+KYC101 - Mandatory identity information is missing.
+
+KYC102 - Customer name does not match the submitted identity document.
+
+KYC103 - Address information is incomplete or inconsistent.
+
+KYC104 - Submitted identity document has expired.
+
+KYC105 - Uploaded document is unreadable.
+
+KYC106 - Possible duplicate customer record detected.
+
+9. Suggested Resolution Steps
+
+For KYC101:
+Check all mandatory fields and request the missing customer information.
+
+For KYC102:
+Compare the customer name entered in the system with the identity document and correct any spelling or formatting differences.
+
+For KYC103:
+Verify the residential address and request updated address proof if required.
+
+For KYC104:
+Request a valid, non-expired document.
+
+For KYC105:
+Ask the customer to upload a clearer copy.
+
+For KYC106:
+Check whether the customer already has an existing profile before creating a new customer record.
+
+10. KYC Update
+
+Customers may be required to update KYC when:
+
+- A document expires
+- The customer's address changes
+- The customer changes their legal name
+- The bank requests periodic re-verification
+- Existing customer data is incomplete
+
+11. Escalation
+
+If the system cannot automatically verify a customer's KYC details, the case may be sent for manual review.
+
+Manual review may be required when:
+
+- Documents contain inconsistent information
+- Duplicate customer records are suspected
+- Identity verification fails repeatedly
+- Customer information cannot be validated
+
+12. Support Guidance
+
+A support employee should not approve or modify KYC information without following the required process.
+
+If sufficient information is not available, the user should be informed that the case requires further verification or escalation.

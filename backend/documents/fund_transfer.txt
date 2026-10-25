@@ -1,0 +1,194 @@
+FUND TRANSFER OPERATIONS AND SUPPORT GUIDE
+
+1. Overview
+
+A fund transfer allows money to be moved from one account to another account.
+
+The banking system may support multiple transfer types such as:
+
+- Internal account transfer
+- NEFT
+- RTGS
+- IMPS
+
+The exact availability of a transfer method may depend on the bank, transaction amount, account type, and operating conditions.
+
+2. Typical Fund Transfer Process
+
+A normal transfer may involve:
+
+1. Customer selects the source account.
+2. Customer selects or enters the beneficiary.
+3. Customer enters the transfer amount.
+4. System validates the beneficiary.
+5. System checks the available account balance.
+6. System checks transaction limits.
+7. Customer confirms the transfer.
+8. Transaction is processed.
+9. Final transaction status is recorded.
+
+3. Common Transaction Statuses
+
+The system may display:
+
+- Initiated
+- Processing
+- Successful
+- Failed
+- Pending
+- Reversed
+- Cancelled
+
+4. Common Reasons for Transfer Failure
+
+Fund transfers may fail because of:
+
+- Incorrect beneficiary account number
+- Invalid beneficiary details
+- Inactive beneficiary
+- Insufficient account balance
+- Transfer limit exceeded
+- Network or service interruption
+- Destination bank unavailable
+- Account restriction
+- Invalid transaction amount
+- Temporary system issue
+
+5. Beneficiary Validation
+
+Before sending a transfer, the banking system may check:
+
+- Beneficiary account number
+- Beneficiary status
+- Bank or branch information
+- Transfer eligibility
+- Account restrictions
+
+If beneficiary validation fails, the transaction should not continue.
+
+6. Balance Validation
+
+The system checks whether sufficient funds are available.
+
+The available balance may be different from the displayed account balance if:
+
+- Funds are on hold
+- Previous transactions are pending
+- Minimum balance restrictions apply
+- Other account restrictions exist
+
+7. Transaction Limits
+
+Limits may apply based on:
+
+- Transfer type
+- Account type
+- Daily transaction limit
+- Per-transaction limit
+- Customer profile
+- Beneficiary type
+
+A transfer exceeding the configured limit should be rejected or require another process.
+
+8. Sample Error Codes
+
+FT101 - Beneficiary account could not be validated.
+
+FT102 - Insufficient available balance.
+
+FT103 - Transaction amount exceeds configured transfer limit.
+
+FT104 - Transfer service is temporarily unavailable.
+
+FT105 - Destination bank did not respond within the expected time.
+
+FT106 - Source account is restricted from making transfers.
+
+FT107 - Invalid transfer amount.
+
+FT108 - Transaction could not be completed due to a temporary processing error.
+
+9. Error Resolution
+
+For FT101:
+Verify the beneficiary account number and beneficiary status.
+
+For FT102:
+Check the available balance and ensure the customer has enough funds.
+
+For FT103:
+Check the applicable transfer limit and reduce the amount if appropriate.
+
+For FT104:
+Retry after the service becomes available.
+
+For FT105:
+Check whether the transaction is pending before asking the customer to retry.
+
+For FT106:
+Review the source account status and restrictions.
+
+For FT107:
+Verify that the transfer amount is valid and within the allowed range.
+
+For FT108:
+Check the transaction status before retrying to avoid duplicate transfers.
+
+10. Pending Transactions
+
+A pending transaction does not necessarily mean the transaction has failed.
+
+Support staff should check:
+
+- Transaction reference number
+- Processing status
+- Debit status
+- Destination status
+- Reversal status
+
+A customer should not immediately retry a pending transaction unless the system confirms that the original attempt failed.
+
+11. Reversal
+
+In some cases, an account may be debited but the transfer does not complete.
+
+The system may then initiate a reversal.
+
+A reversal means that the debited amount is returned to the customer's account.
+
+The support user should verify:
+
+- Original transaction reference
+- Debit amount
+- Failure status
+- Reversal reference
+- Reversal completion status
+
+12. Duplicate Transfer Risk
+
+If the customer repeatedly retries a transaction without checking the status, duplicate payments may occur.
+
+The system should therefore display the latest transaction status clearly before another attempt is made.
+
+13. Support Checklist
+
+Before escalating a failed transfer, check:
+
+- Source account
+- Beneficiary details
+- Available balance
+- Transfer limit
+- Transaction status
+- Error code
+- Transaction reference number
+- Whether a reversal has already been initiated
+
+14. Escalation
+
+Escalation may be required when:
+
+- Transaction remains pending for an unusually long time
+- Customer account was debited but no reversal is visible
+- Error occurs repeatedly
+- Destination bank status cannot be confirmed
+- System logs indicate a backend processing issue

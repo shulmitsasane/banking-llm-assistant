@@ -1,0 +1,199 @@
+LOAN APPLICATION AND PROCESSING GUIDE
+
+1. Overview
+
+A loan application is a request from a customer to borrow funds from the bank.
+
+The bank may evaluate the application using customer information, income details, repayment ability, credit information, and internal lending rules.
+
+2. Common Loan Types
+
+Examples may include:
+
+- Personal loan
+- Home loan
+- Vehicle loan
+- Education loan
+- Business loan
+
+3. Basic Application Information
+
+A loan application may include:
+
+- Customer ID
+- Full name
+- Date of birth
+- Address
+- Employment status
+- Employer name
+- Monthly income
+- Existing financial obligations
+- Requested loan amount
+- Loan tenure
+- Loan purpose
+
+4. Supporting Documents
+
+Supporting documents may include:
+
+- Identity proof
+- Address proof
+- Income proof
+- Salary slips
+- Bank statements
+- Employment information
+- Tax documents
+- Property or asset documents where applicable
+
+5. Loan Application Process
+
+A typical loan process may involve:
+
+1. Customer submits the application.
+2. System checks mandatory fields.
+3. Customer documents are validated.
+4. Eligibility checks are performed.
+5. Credit information is reviewed.
+6. Repayment capacity is evaluated.
+7. Application is reviewed.
+8. Decision is recorded.
+9. Approved loan proceeds may be disbursed.
+
+6. Application Statuses
+
+Common statuses may include:
+
+- Draft
+- Submitted
+- Under Review
+- Additional Information Required
+- Approved
+- Rejected
+- Disbursed
+- Cancelled
+
+7. Mandatory Field Validation
+
+The system should prevent submission if mandatory information is missing.
+
+Examples include:
+
+- Missing customer ID
+- Missing income information
+- Missing requested loan amount
+- Missing employment details
+- Missing supporting documents
+
+8. Eligibility Review
+
+Eligibility may depend on:
+
+- Customer age
+- Employment status
+- Income
+- Existing financial obligations
+- Requested amount
+- Loan tenure
+- Credit information
+- Internal policy
+
+9. Repayment Capacity
+
+Repayment capacity refers to the customer's ability to make the required loan payments.
+
+The system may consider:
+
+- Monthly income
+- Existing monthly obligations
+- Loan instalment amount
+- Other debts
+
+10. Sample Error Codes
+
+LN101 - Mandatory application information is missing.
+
+LN102 - Customer identity verification is incomplete.
+
+LN103 - Income information could not be validated.
+
+LN104 - Requested loan amount exceeds configured eligibility.
+
+LN105 - Required supporting documents are missing.
+
+LN106 - Application is already under review.
+
+LN107 - Application could not be submitted because of inconsistent data.
+
+11. Resolution Guidance
+
+For LN101:
+Review all mandatory fields and complete the missing information.
+
+For LN102:
+Complete customer verification before continuing.
+
+For LN103:
+Verify income information and supporting documents.
+
+For LN104:
+Review the requested amount and configured eligibility.
+
+For LN105:
+Upload the required supporting documents.
+
+For LN106:
+Do not create a duplicate application. Check the existing application status.
+
+For LN107:
+Review the entered customer, employment, and financial information for inconsistencies.
+
+12. Application Review
+
+A reviewer may check:
+
+- Completeness of information
+- Customer verification status
+- Income and employment information
+- Credit information
+- Existing obligations
+- Requested amount
+- Supporting documents
+
+13. Rejection
+
+A rejected application should include a recorded reason or status according to the system's business process.
+
+Support staff should not manually change a rejected application to approved without following the proper approval process.
+
+14. Disbursement
+
+After approval, a loan may proceed to disbursement.
+
+Before disbursement, the system may verify:
+
+- Approval status
+- Customer account
+- Loan amount
+- Required documents
+- Final authorization
+
+15. Common Support Questions
+
+Customers or staff may ask:
+
+- Why is the loan application still under review?
+- What documents are missing?
+- Why was the application not submitted?
+- What is the current loan status?
+- Why is the requested amount not eligible?
+- Has the loan been disbursed?
+
+16. Escalation
+
+Escalation may be required when:
+
+- Loan status is stuck
+- Application data is inconsistent
+- Document validation repeatedly fails
+- Approved loan cannot be disbursed
+- System displays an unexplained processing error
